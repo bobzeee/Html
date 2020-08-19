@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        background-color: #fafafa;
+        padding: 20px 50px;
+      }
+      h1 {
+        font-weight: 200;
+        font-size: 27px;
+      }
+      h2 {
+        margin-top: -15px;
+        font-weight: 600;
+        font-size: 27px;
+      }
+      p {
+        font-size: 13px;
+        font-weight: 200;
+      }
+      .center {
+        margin-top: -10px;
+        text-align: center;
+        width: 450px;
+      }
+      .card {
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 5px 10px 5px rgba(158, 158, 158, 0.4);
+        margin: 15px;
+      }
+      .card > p {
+        margin-top: -10px;
+      }
+      .card > img {
+        align-self: flex-end;
+        margin-top: 30px;
+        width: 50px;
+        height: 50px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .box1 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        border-top: 4px solid hsl(180, 62%, 55%);
+      }
+      .box2 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        border-top: 4px solid hsl(0, 78%, 62%);
+        margin-bottom: -100px;
+      }
+      .box3 {
+        grid-row: 3/4;
+        grid-column: 2/3;
+        margin-top: -100px;
+        border-top: 4px solid hsl(34, 97%, 64%);
+      }
+      .box4 {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        border-top: 4px solid hsl(212, 86%, 64%);
+      }
+
+      @media screen and (max-width: 780px) {
+        .grid {
+          display: flex;
+          flex-direction: column;
+        }
+        body {
+          padding-top: 70px;
+        }
+        .box2 {
+          margin-bottom: 15px;
+        }
+        .box3 {
+          margin-top: 15px;
+        }
+        .center {
+          font-size: 17px;
+          width: 350px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Reliable, efficient delivery</h1>
+    <h2>Powered by Technology</h2>
+
+    <p class="center">
+      Our Artificial Intelligence powered tools use millions of project data
+      points to ensure that your project is successful
+    </p>
+
+    <div class="grid">
+      <div class="card box1">
+        <h3>Supervisor</h3>
+        <p>
+          Monitors activity to identify project<br />
+          roadblocks
+        </p>
+        <img src="./images/icon-supervisor.svg" alt="Supervisor" />
+      </div>
+      <div class="card box2">
+        <h3>Team Builder</h3>
+        <p>
+          Scans our talent network to create the <br />
+          optimal team for your project
+        </p>
+        <img src="./images/icon-team-builder.svg" alt="Team Builder" />
+      </div>
+      <div class="card box3">
+        <h3>Karma</h3>
+        <p>
+          Regularly evaluates our talent to ensure <br />
+          quality
+        </p>
+        <img src="./images/icon-karma.svg" alt="Karma" />
+      </div>
+      <div class="card box4">
+        <h3>Calculator</h3>
+        <p>
+          Uses data from past projects to provide <br />
+          better delivery estimates
+        </p>
+        <img src="./images/icon-calculator.svg" alt="Calculator" />
+      </div>
+    </div>
+  </body>
+</html>
